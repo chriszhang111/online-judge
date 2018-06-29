@@ -1,6 +1,7 @@
 .difficulty {
-  min-width: 65px;
-  margin-right: 10px;
+  width: 75px;
+  margin-right: 15px;
+  padding-left: 2px;
 }
 
 .label.difficulty {
