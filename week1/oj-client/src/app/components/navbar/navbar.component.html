@@ -7,16 +7,19 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
+
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search Problem">
       </form>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav mr-auto">
         <li>
           <form class="navbar-form">
             <button type="button" class="btn btn-primary">Sign in</button>
           </form>
         </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{username}}
@@ -30,6 +33,12 @@
           </div>
         </li>
       </ul>
+      <ul class="navbar-nav mr-auto">
+        <li>
+          <a class="btn btn-success pull-right" [routerLink]="['/problems/new']">Add problem</a>
+        </li>
+      </ul>
+
     </div>
   </nav>
 </div>

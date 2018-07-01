@@ -29,6 +29,15 @@ router.post("/problems", jsonParser, function(req,res){
         })
 });
 
+router.post("/problems/new", jsonParser, function(req,res){
+    problemService.addProblem(req.body).then(function(problem){
+        res.json(problem);
+    }, function (err) {
+        res.status(400).send("Problem name already exists");
+
+    })
+})
+
 
 
 module.exports = router;

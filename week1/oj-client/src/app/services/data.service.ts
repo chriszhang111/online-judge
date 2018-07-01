@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {Problem} from "../models/problem_model";
-import {PROBLEMS} from "../mock-problem";
 import {Http, Response, Headers, RequestOptions} from '@angular/http';
 import { BehaviorSubject} from 'rxjs';
 import { Observable } from 'rxjs';

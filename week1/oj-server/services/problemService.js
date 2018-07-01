@@ -1,12 +1,3 @@
-var problems = [
-    {
-        id:1,
-        name:"two sum",
-        desc:"Return two sum of an array..."
-    }
-];
-
-
 var ProblemModel = require("../models/problemModel");
 
 var getProblems = function(){
